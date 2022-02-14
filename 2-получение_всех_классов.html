@@ -18,5 +18,23 @@
     3. Переберите с помощью forEach event.target.classList и выведите каждый класс
     в консоль.
     -->
+    
+    <script>
+        'use strict';
+
+        let paragraph  = document.querySelectorAll('p');
+
+        paragraph.forEach(function(elem){
+            elem.addEventListener('click', paragraphClickHandler); 
+            
+        });
+
+       function paragraphClickHandler(){
+           console.log(event.target.classList);
+       };
+
+        
+
+    </script>
 </body>
 </html>
